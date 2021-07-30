@@ -27,3 +27,7 @@ EXPOSE $PORT
 ENTRYPOINT [ "yarn", "start" ]
 
 # finally, build with: "docker build -t <image name here> . "
+# if you want to add to a docker registry: "docker build -t <registry>/<name>:<tag> . "
+# the docker registry name can be you or your company, depending on how you are required to store your images. 
+# tages allow you to pull down a VERY specific version, but can you automate the versioning system? 
+# to remove images: docker rmi <imageID>
